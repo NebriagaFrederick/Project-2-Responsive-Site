@@ -1,12 +1,13 @@
 body {
     background-image: url(../afbeeldingen/pexels-maurice-engelen-14754123.jpeg);
    
-
-    height: 100vh;
+    width: 100%;
+    height: 100%;
    
-    background-position: center;
+    background-position: cover;
     background-repeat: no-repeat;
     background-size: cover;
+    
     color:white;
     text-shadow: 2px 2px 10px rgba(0,0,0,0.25 );
    }
