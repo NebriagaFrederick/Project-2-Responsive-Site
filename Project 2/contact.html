@@ -44,26 +44,45 @@
       </div>
     </div>
   </nav>
-    <div class="main">
-        <h1>Salus In Arduis</h1>
+  <div class="fcf-body">
+
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Contacteer ons</h3>
+
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
         
-        <div class="content-right">
-          <p>Heb je een vraag? Aarzel dan niet om mij een bericht te sturen!</p>
-          <form action="/action_page.php" method="post">
-              <div>
-                  <label>Voornaam</label><br>
-                  <input type="text" name="firstname" placeholder="Voornaam" required>
-              </div>
-              <div>
-                  <label>Familienaam</label><br>
-                  <input type="text" name="lastname" placeholder="Familienaam" required><br>
-                  <textarea placeholder="Wat is je vraag?" rows="5" required></textarea>
-              </div>
-              <input type="submit" value="Verzenden" />
-          </form>
-          
-      </div>
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Naam en Achternaam</label>
+            
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Uw e-mailadress</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Uw bericht</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required> Schrijf hier...</textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+    </form>
     </div>
+
+</div>
+
+  </div>
     <!--Footer-->
     <footer class="d-flex flex.wrap justify-content-between align-items-center py-3 my-4">
       <div class="col-md-4 d-flex align-items-center">
